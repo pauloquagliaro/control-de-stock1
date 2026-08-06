@@ -13,7 +13,6 @@ Preguntas y respuestas:
 rta: no se está utilizando un sistema actualmente
 
 ¿Cómo registran lo que entra y lo que sale?
-
 rta: Se registra todo a mano. Cuando entra mercadería al stock, no se anota en ningún lado. Entra y va a la góndola.
 Lo que sí llevamos es la salida, con una planilla de papel. La dividimos en turno mañana y turno tarde. Al abrir se anota con cuánta plata se inicia y durante la jornada se anotan las ventas: por un lado lo que entra en efectivo y por otro lado lo de transferencia.
 
