@@ -24,4 +24,4 @@ Otro problema, aunque de menor importancia, es el control de stock. La mercader�
 rta: Lo usarían los empleados. No todos con los mismos permisos: los balances, modificar el stock, eliminar registros debe ser realizado solo por el empleador. Poder imprimir reportes es esencial. El sistema debe registrar proveedores y también las compras y las ventas. Algo que sería ideal es mandar una alerta cuando haya poco stock en los productos
 
 ¿hay alguna funcion que te gustaria que tenga el sistema?<br>
-rta: Me gustaria poder ver de que productos falta stock, los costos y beneficios de cada producto. Ver un balance cada mes ,ver cuantas ventas se realizaron en “x” fechas
+rta: Me gustaria poder ver los costos y beneficios de cada producto. Ver un balance cada mes ,ver cuantas ventas se realizaron en “x” fechas
