@@ -10,7 +10,7 @@ Es un almacén de venta de productos al público en general, no se apunta a un r
 Preguntas y respuestas:
 
 ¿Cuentan con un sistema ya implementado?<br>
-rta: no se está utilizando un sistema actualmente
+rta: No, no se está utilizando un sistema actualmente
 
 ¿Cómo registran actualmente los movimientos de dinero y de mercadería?
 Rta.: Actualmente los registros se realizan de forma manual. Cuando ingresa mercadería, no se lleva un registro formal de la entrada, sino que directamente se coloca en las góndolas. Las salidas de dinero se registran mediante una planilla de papel, dividida en turno mañana y turno tarde. Al comenzar cada turno se registra el dinero disponible en caja y durante la jornada se anotan las ventas, diferenciando los pagos en efectivo de las transferencias.
