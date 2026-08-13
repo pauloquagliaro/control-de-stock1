@@ -16,8 +16,8 @@ Rta: No, no se está utilizando ningun sistema actualmente
 Rta.: Los registros se hacen de forma manual. Cuando entra mercadería, no se anota nada, directamente se acomoda en las góndolas. Las salidas de dinero se anotan en una planilla de papel, dividida en turno mañana y turno tarde. Al empezar cada turno se anota el dinero que hay en caja, y durante el día se van anotando las ventas, separando lo que se cobra en efectivo de lo que se cobra por transferencia.
 
 ¿tienen alguna problematica acualmente?<br>
-ta.: El problema más grande hoy es el control de caja. Al cerrar cada turno suelen aparecer diferencias entre lo que debería haber y lo que realmente hay, y es difícil saber de dónde sale el error porque no hay un registro detallado. 
-Otro problema, este sí relacionado al sistema que vamos a hacer, es el control de stock y de ganancias. La mercadería que entra no siempre se registra, entonces no se sabe con exactitud cuánto hay de cada producto ni cuándo hace falta reponer. Además, con los productos que tienen fecha de vencimiento, al no hacerles seguimiento, a veces se vencen antes de venderse y se pierde plata. Hoy todo el tema de stock y ganancias se lleva a mano, es muy engorroso, y los números no quedan claros, ni el stock ni la ganancia por período.
+Rta.: El problema más grande hoy es el control de caja. Al cerrar cada turno suelen aparecer diferencias entre lo que debería haber y lo que realmente hay, y es difícil saber de dónde sale el error porque no hay un registro detallado. <br>
+Otro problema, es el control de stock y de ganancias. La mercadería que entra no siempre se registra, entonces no se sabe con exactitud cuánto hay de cada producto ni cuándo hace falta reponer. Además, con los productos que tienen fecha de vencimiento, al no hacerles seguimiento, a veces se vencen antes de venderse y se pierde plata. Hoy todo el tema de stock y ganancias se lleva a mano, es muy engorroso, y los números no quedan claros, ni el stock ni la ganancia por período.
 
 ¿Cuentan con computadora en el local? ¿Tienen conexión a internet? 
 Rta.: Por ahora no hay ninguna computadora en el local. Sí hay conexión a internet.
