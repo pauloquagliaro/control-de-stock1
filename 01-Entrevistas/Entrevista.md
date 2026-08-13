@@ -30,5 +30,4 @@ rta: Me gustaria poder ver los costos y beneficios de cada producto. Tambien ver
 
 Análisis del equipo (no forma parte de las respuestas del entrevistado)
 A partir de la respuesta sobre vencimientos, el equipo identificó que una de las causas de que se venza mercadería es que Mauro compra de más sin tener una noción clara de cuánto se vende realmente de cada producto, ya que el control de stock se hace a ojo.
-
 Por eso se propone que el sistema muestre el promedio de ventas de cada producto en los últimos meses (por ejemplo, del último mes o de los últimos dos). Con ese dato a la vista, Mauro podría comparar antes de comprar y decidir con mejor criterio si le conviene o no aprovechar una oferta por cantidad. Esto ataca la causa del problema de vencimientos y se conecta con el pedido que ya había hecho de poder ver balances y ventas por fecha.
