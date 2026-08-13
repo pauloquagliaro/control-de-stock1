@@ -1,7 +1,7 @@
 # Entrevista
 
-Participantes: Luca Valls, Alan Balzaretti, Paulo Quagliaro, Maximo Pistarino
-Persona entrevistada: Mauro Valls (Dueño del negocio)
+Participantes: Luca Valls, Alan Balzaretti, Paulo Quagliaro, Maximo Pistarino<br>
+Persona entrevistada: Mauro Valls (Dueño del negocio)<br>
 Objetivo: Relevamiento de requisitos para el sistema de control de stock
 
 Contexto del lugar:
