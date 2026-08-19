@@ -1,20 +1,20 @@
 # Reglas De Negocio
 
-1. Hechos<br>
+### 1. Hechos<br>
 ● Estructura del negocio: El almacén cuenta con una única sucursal física y se dedica a la venta de productos de diversos rubros (comestibles, limpieza, electrónicos y mascotas) a todo público.<br>
 ● Equipo de trabajo: El personal está compuesto por 4 empleados en total (3 destinados a la atención al cliente en turnos rotativos de mañana y tarde, y 1 exclusivo para el control de stock).<br>
 ● Modelo de datos simplificado: El negocio requiere registrar proveedores , compras y ventas , pero explícitamente no realiza ni necesita un registro de datos de clientes.
 
 ---
 
-2. Restricciones<br>
+### 2. Restricciones<br>
 ● Seguridad de datos: Solo el usuario con rol de Empleador tiene permisos para modificar los niveles de stock manualmente , eliminar registros y visualizar los balances económicos diarios y mensuales.<br>
 ● Congelamiento de precios: Cuando se registra una compra con un costo mayor al proveedor, el sistema tiene prohibido modificar el precio de venta automáticamente. El precio de venta al público se mantiene viejo hasta que el empleador lo autorice y cambie manualmente.<br>
 ● Políticas de Turnos: Cada turno debe registrar obligatoriamente con cuánto dinero en efectivo inicia la caja.
 
 ---
 
-3. Acciones Disparadores<br>
+### 3. Acciones Disparadores<br>
 ● Inicio de Sesión Registro de Auditoría: Cuando un empleado se loguea con su usuario individual, el sistema dispara un registro automático e inalterable de asistencia visible para el empleador.<br>
 ● Venta/Compra de Producto Actualización de Stock: Al confirmar una transacción de salida o entrada, se dispara la actualización del inventario en tiempo real.<br>
 ● Cruce de Umbral Alerta de Stock Mínimo: Cuando las existencias físicas de un producto caen por debajo del límite configurado para su categoría, el sistema dispara una alerta visual de reposición.<br>
@@ -23,7 +23,7 @@
 
 ---
 
-4. Cálculos<br>
+### 4. Cálculos<br>
 ● Cálculo de Ganancia Neta por Producto: Se abandona el estimativo general del 28% diario. Para ello, el empleador ingresa manualmente el precio de costo y el precio de venta final en el sistema, y luego el software calcula la ganancia real mediante la fórmula:<br>
 Ganancia = Precio de Venta - Precio de Costo<br>
 ● Arqueo Teórico de Caja: Para reducir los errores de faltantes y sobrantes, el sistema calculará al final del día cuánto dinero debería haber físicamente usando la siguiente ecuación:<br>
@@ -32,7 +32,7 @@ Caja teorica = Caja Inicial + Ventas en Efectivo - Pagos a Proveedores<br>
 
 ---
 
-5. Inferencias<br>
+### 5. Inferencias<br>
 ● Insuficiencia de Efectivo en Caja: Si se debe pagar a un proveedor un monto superior al dinero disponible en la caja física, el sistema permitirá registrar la transacción bajo la modalidad de transferencia bancaria.<br>
 ● Discrepancia en Arqueo (Sobrante/Faltante): Si el dinero físico real al cierre del turno no coincide con el cálculo del sistema, este no bloqueará la operación. Permitirá cerrar la jornada registrando la diferencia como "desajuste coherente por redondeo" para la posterior revisión del empleador.<br>
 ● Productos Vencidos o Perdidos (Mermas): Ante la pérdida o vencimiento de mercadería, el sistema debe permitir una salida de stock excepcional sin contrapartida de dinero (venta $0), restando las unidades del inventario y registrándose como pérdida directa, permitiendo esta acción exclusivamente al usuario con rol de empleador.<br>
