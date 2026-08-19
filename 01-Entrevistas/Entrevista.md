@@ -1,4 +1,11 @@
-### Entrevista: Relevamiento de Requerimientos para Almacén
+### Entrevista
+### Participantes:  Luca Valls, Alan Balzaretti, Paulo Quagliaro, Maximo Pistarino
+### Persona entrevistada: Mauro Valls (Dueño del negocio)
+### Objetivo: Relevamiento de requisitos para el sistema de control de stock
+
+**Contexto del lugar:** Es un almacén de venta de productos al público en general, no se apunta a un rubro puntual. Maneja bastante variedad: comestibles, productos de limpieza, electrónicos y también artículos para mascotas. Son cuatro empleados en total. Estos se dividen en turnos durante el día en la atención al cliente y uno se encarga puntualmente del control del stock. El local es uno solo, no manejamos varios depósitos ni sucursales.
+
+**Preguntas y respuestas:**
 
 **1) ¿Cómo es un día normal de trabajo?**
 
