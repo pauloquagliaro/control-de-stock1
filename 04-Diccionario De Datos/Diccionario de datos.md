@@ -1,246 +1,105 @@
 # Diccionario de Datos - STOCKIFY
 
-## 1. Introducción
-
-El Diccionario de Datos de **STOCKIFY** contiene las definiciones de los datos que intervienen en el sistema de gestión de stock del almacén.
-
-Su objetivo es establecer una descripción precisa y organizada de los datos utilizados por el sistema, facilitando su comprensión tanto para el usuario como para el analista.
-
-El diccionario define los **almacenamientos**, las **estructuras de datos** y los **datos elementales** que forman parte del sistema.
-
-El sistema permite gestionar productos, ventas, proveedores, compras, pagos, empleados y turnos, además de consultar información relacionada con stock, ventas y balances.
+Listado organizado con las definiciones precisas y rigurosas de los datos del sistema de control de stock del almacén. Describe el significado de cada almacenamiento, de sus datos elementales y de las relaciones entre componentes, siguiendo la notación de la metodología estructurada.
 
 ---
 
-## 2. Notación utilizada
+## Notación
 
-|  Símbolo  | Relación      | Significado                                                                     |
-| :-------: | :------------ | :------------------------------------------------------------------------------ |
-|    `=`    | Definición    | Define de qué componentes está compuesto un elemento.                           |
-|    `+`    | Secuencial    | Los componentes siempre están presentes en la estructura.                       |
-|  `[ \| ]` | Selección     | Representa alternativas. Solo se selecciona una.                                |
-| `vi{ }vf` | Repetición    | El componente puede repetirse entre un valor inicial y un valor final de veces. |
-|   `( )`   | Opcional      | El componente puede estar presente o no.                                        |
-|    `@`    | Identificador | Identifica un registro de manera única y no admite valores nulos.               |
-
----
-
-# 3. Almacenamientos
-
-Los almacenamientos representan los datos que permanecen almacenados en el sistema.
-
-Cada almacenamiento se define mediante una estructura de datos compuesta por datos elementales y/o otras estructuras.
-
-### 3.1 Usuario
-
-```text
-Usuario = @idUsuario + nombreUsuario + rolUsuario
-```
-
-Representa a una persona que utiliza el sistema. El sistema diferencia las funcionalidades disponibles según el rol del usuario.
-
-### 3.2 Producto
-
-```text
-Producto = @codigoBarras + nombreProducto + precioVenta + costoProducto + (fechaVencimiento) + stockActual
-```
-
-Representa cada producto comercializado por el almacén.
-
-### 3.3 Venta
-
-```text
-Venta = @idVenta + fechaVenta + turno + idUsuario + medioPago + 1{DetalleVenta}n + totalVenta
-```
-
-Representa una venta realizada en el negocio.
-
-### 3.4 Detalle de venta
-
-```text
-DetalleVenta = codigoBarras + cantidad + precioVenta + subtotal
-```
-
-Representa un producto incluido dentro de una venta.
-
-### 3.5 Proveedor
-
-```text
-Proveedor = @idProveedor + nombreProveedor + (telefono) + (email)
-```
-
-Representa a los proveedores que abastecen de mercadería al negocio.
-
-### 3.6 Compra
-
-```text
-Compra = @idCompra + fechaCompra + idProveedor + 1{DetalleCompra}n + totalCompra
-```
-
-Representa una compra de mercadería realizada a un proveedor.
-
-### 3.7 Detalle de compra
-
-```text
-DetalleCompra = codigoBarras + cantidad + costoProducto
-```
-
-Representa un producto incluido dentro de una compra.
-
-### 3.8 Pago a proveedor
-
-```text
-PagoProveedor = @idPago + fechaPago + idProveedor + montoPago
-```
-
-Representa un pago realizado a un proveedor por mercadería adquirida.
-
-### 3.9 Turno
-
-```text
-Turno = @idTurno + fechaTurno + tipoTurno + 1{empleado}n
-```
-
-Representa un turno de atención del negocio y los empleados que trabajaron durante el mismo.
+| Símbolo | Relación | Significado |
+| :--- | :--- | :--- |
+| `=` | Definición | "está compuesto de". |
+| `+` | Secuencial | Componentes que siempre están presentes. |
+| `[ \| ]` | Selección | Alternativas; solo se elige una. |
+| `vi{ }vf` | Repetición | El componente se itera entre vi y vf veces. |
+| `( )` | Opcional | El componente puede estar o no (repetición 0{ }1). |
+| `@` | Identificador | Campo único que no se repite ni admite nulos (clave primaria). |
 
 ---
 
-# 4. Estructuras con relación de selección
+## Almacenamientos
 
-Las estructuras de selección permiten establecer alternativas donde solamente una opción puede ser elegida.
+Los almacenamientos son los flujos de datos en reposo del sistema. Cada uno se define como una estructura de datos:
 
-### 4.1 Rol de usuario
+    Usuario = @idUsuario + nombreUsuario + contraseña + nombreCompleto + rol + estadoUsuario
 
-```text
-rolUsuario = [ empleador | empleado ]
-```
+    Categoria = @idCategoria + nombreCategoria + (descripcionCategoria)
 
-El usuario puede tener el rol de empleador o empleado. Las funcionalidades disponibles dependen del rol.
+    Proveedor = @idProveedor + razonSocial + cuit + (telefono) + (email) + (direccion) + estadoProveedor
 
-### 4.2 Tipo de turno
+    Producto = @idProducto + codigoBarras + nombreProducto + (descripcionProducto) + idCategoria + idProveedor + precioCosto + precioVenta + stockActual + stockMinimo + (fechaVencimiento) + estadoProducto
 
-```text
-tipoTurno = [ mañana | tarde ]
-```
+    Turno = @idTurno + fechaTurno + tipoTurno + montoInicialCaja + 1{idUsuario}n + totalEfectivo + totalTransferencia + totalTurno
 
-El negocio se organiza en turno mañana y turno tarde.
+    Venta = @idVenta + fechaVenta + idTurno + idUsuario + medioPago + 1{DetalleVenta}n + totalVenta + estadoVenta
 
-### 4.3 Medio de pago
+    DetalleVenta = @idDetalle + idVenta + idProducto + cantidad + precioUnitario + subtotal
 
-```text
-medioPago = [ efectivo | transferencia ]
-```
-
-Una venta puede ser abonada mediante efectivo o transferencia.
+    PagoProveedor = @idPago + idProveedor + fechaPago + monto + (concepto)
 
 ---
 
-# 5. Datos elementales
+## Estructuras con relación de selección
 
-Los datos elementales representan las unidades mínimas e indivisibles de información utilizadas por el sistema.
+Dato elemental cuyo valor se elige de un conjunto cerrado de alternativas:
 
-Cada dato se describe mediante su nombre, descripción, longitud, tipo y dominio de valores admisibles.
-
-| Nombre             | Descripción                                                         | Longitud | Tipo             | Dominio                                         |
-| :----------------- | :------------------------------------------------------------------ | :------: | :--------------- | :---------------------------------------------- |
-| `idUsuario`        | Identificador único del usuario del sistema.                        |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `nombreUsuario`    | Nombre utilizado para identificar al usuario.                       |    50    | Alfanumérico     | Texto libre                                     |
-| `rolUsuario`       | Rol que determina las funcionalidades disponibles para el usuario.  |     —    | Alfanumérico     | Discreto: `{(E, empleador); (EM, empleado)}`    |
-| `codigoBarras`     | Código utilizado para identificar un producto durante una venta.    |    50    | Alfanumérico     | Texto libre                                     |
-| `nombreProducto`   | Nombre del producto comercializado.                                 |    100   | Alfanumérico     | Texto libre                                     |
-| `precioVenta`      | Precio al que se comercializa el producto.                          |   12,2   | Numérico decimal | Continuo: `{vi: 0; vf: n}`                      |
-| `costoProducto`    | Costo de adquisición del producto.                                  |   12,2   | Numérico decimal | Continuo: `{vi: 0; vf: n}`                      |
-| `fechaVencimiento` | Fecha hasta la cual puede comercializarse el producto.              |     —    | Fecha            | Fecha válida                                    |
-| `stockActual`      | Cantidad disponible del producto en el inventario.                  |     —    | Numérico entero  | Continuo: `{vi: 0; vf: n}`                      |
-| `idVenta`          | Identificador único de una venta.                                   |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `fechaVenta`       | Fecha en la que se realizó la venta.                                |     —    | Fecha/Hora       | Fecha y hora válidas                            |
-| `turno`            | Turno en el que se realizó la venta.                                |     —    | Alfanumérico     | Discreto: `{(M, mañana); (T, tarde)}`           |
-| `medioPago`        | Medio utilizado para abonar la venta.                               |     —    | Alfanumérico     | Discreto: `{(E, efectivo); (T, transferencia)}` |
-| `cantidad`         | Cantidad de unidades de un producto involucradas en una operación.  |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `subtotal`         | Importe correspondiente a un producto dentro de una venta o compra. |   12,2   | Numérico decimal | Continuo: `{vi: 0; vf: n}`                      |
-| `totalVenta`       | Importe total correspondiente a una venta.                          |   12,2   | Numérico decimal | Continuo: `{vi: 0; vf: n}`                      |
-| `idProveedor`      | Identificador único del proveedor.                                  |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `nombreProveedor`  | Nombre o razón por la cual se identifica al proveedor.              |    100   | Alfanumérico     | Texto libre                                     |
-| `telefono`         | Número telefónico de contacto del proveedor.                        |    30    | Alfanumérico     | Texto libre                                     |
-| `email`            | Dirección de correo electrónico del proveedor.                      |    100   | Alfanumérico     | Texto libre                                     |
-| `idCompra`         | Identificador único de una compra.                                  |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `fechaCompra`      | Fecha en la que se realizó la compra al proveedor.                  |     —    | Fecha/Hora       | Fecha y hora válidas                            |
-| `totalCompra`      | Importe total correspondiente a una compra.                         |   12,2   | Numérico decimal | Continuo: `{vi: 0; vf: n}`                      |
-| `idPago`           | Identificador único de un pago realizado a un proveedor.            |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `fechaPago`        | Fecha en la que se realizó el pago al proveedor.                    |     —    | Fecha/Hora       | Fecha y hora válidas                            |
-| `montoPago`        | Importe abonado al proveedor.                                       |   12,2   | Numérico decimal | Continuo: `{vi: 0; vf: n}`                      |
-| `idTurno`          | Identificador único de un turno.                                    |     —    | Numérico entero  | Continuo: `{vi: 1; vf: n}`                      |
-| `fechaTurno`       | Fecha correspondiente al turno de atención.                         |     —    | Fecha            | Fecha válida                                    |
-| `tipoTurno`        | Tipo de turno de atención.                                          |     —    | Alfanumérico     | Discreto: `{(M, mañana); (T, tarde)}`           |
+    rol = [ Empleador | Empleado ]
+    tipoTurno = [ mañana | tarde ]
+    medioPago = [ efectivo | transferencia ]
+    estado = [ activo | inactivo ]
+    estadoVenta = [ confirmada | anulada ]
 
 ---
 
-# 6. Relaciones y reglas relevantes para los datos
+## Datos elementales
 
-Las siguientes relaciones se desprenden de los requerimientos y reglas de negocio del sistema.
+Mínimas unidades indivisibles de datos, con su nombre, descripción, longitud, tipo y dominio de valores admisibles.
 
-### 6.1 Productos y ventas
-
-Una venta está compuesta por uno o más detalles de venta:
-
-```text
-Venta = @idVenta + fechaVenta + turno + idUsuario + medioPago + 1{DetalleVenta}n + totalVenta
-```
-
-Cada detalle identifica el producto vendido, la cantidad, su precio de venta y el subtotal correspondiente.
-
-### 6.2 Productos y compras
-
-Una compra está compuesta por uno o más detalles de compra:
-
-```text
-Compra = @idCompra + fechaCompra + idProveedor + 1{DetalleCompra}n + totalCompra
-```
-
-Cada detalle identifica el producto adquirido, la cantidad y su costo.
-
-### 6.3 Turnos y empleados
-
-Cada turno debe quedar asociado al empleado o empleados que trabajaron durante el mismo.
-
-```text
-Turno = @idTurno + fechaTurno + tipoTurno + 1{empleado}n
-```
-
-### 6.4 Actualización del stock
-
-Cuando se confirma una operación de entrada o salida de mercadería, se actualiza el stock correspondiente.
-
-Las entradas de mercadería incrementan el stock y las salidas producidas por las ventas lo disminuyen.
-
-### 6.5 Cálculo de ganancia
-
-La ganancia de un producto se obtiene mediante la diferencia entre su precio de venta y su costo:
-
-```text
-gananciaProducto = precioVenta - costoProducto
-```
-
-### 6.6 Total de una venta
-
-El total de una venta se obtiene a partir de los subtotales correspondientes a los productos vendidos:
-
-```text
-totalVenta = Σ subtotal
-```
-
-### 6.7 Total de ventas por período
-
-El total facturado durante un período se obtiene a partir de las ventas registradas dentro de dicho período.
-
----
-
-# 7. Observaciones
-
-Este diccionario fue elaborado a partir del relevamiento de requisitos y las reglas de negocio disponibles para STOCKIFY.
-
-Algunos elementos, como `idUsuario`, `idVenta`, `idCompra`, `idPago` e `idTurno`, se incorporan como identificadores necesarios para representar los almacenamientos siguiendo la notación de la materia.
-
-La estructura deberá contrastarse con el **Diagrama de Flujo de Datos (DFD)** y el **Modelo Entidad-Relación (DER)** definitivo del proyecto para asegurar que los nombres, atributos y relaciones coincidan exactamente con dichos modelos.
-
-No se incorpora la gestión de ventas fiadas ni información de clientes, ya que el relevamiento establece explícitamente que estas operaciones continuarán realizándose fuera del sistema.
+| Nombre | Descripción | Longitud | Tipo | Dominio |
+| :--- | :--- | :---: | :--- | :--- |
+| idUsuario | Identificador único del usuario. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| nombreUsuario | Nombre de acceso al sistema (único). | 30 | Alfanumérico | Texto libre |
+| contraseña | Contraseña almacenada cifrada (hash). | 255 | Alfanumérico | Texto libre |
+| nombreCompleto | Nombre y apellido del usuario. | 80 | Alfanumérico | Texto libre |
+| rol | Rol del usuario dentro del sistema, determina las funcionalidades habilitadas. | 15 | Alfanumérico | Discreto: {(D, Empleador); (E, Empleado)} |
+| idCategoria | Identificador único de la categoría. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| nombreCategoria | Nombre del rubro/categoría del producto (ej.: comestibles, limpieza). | 50 | Alfanumérico | Texto libre |
+| descripcionCategoria | Descripción de la categoría. | 150 | Alfanumérico | Texto libre |
+| idProveedor | Identificador único del proveedor. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| razonSocial | Razón social del proveedor. | 100 | Alfanumérico | Texto libre |
+| cuit | CUIT del proveedor. | 13 | Numérico | Formato XX-XXXXXXXX-X |
+| telefono | Teléfono de contacto del proveedor. | 30 | Numérico | Texto libre |
+| email | Correo electrónico de contacto del proveedor. | 80 | Alfanumérico | Texto libre |
+| direccion | Domicilio del proveedor. | 120 | Alfanumérico | Texto libre |
+| idProducto | Identificador único del producto. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| codigoBarras | Código de barras del producto, utilizado para identificarlo al momento de la venta. Es único, no admite repetición. | 13 | Numérico | Continuo: {vi: 0; vf: n} |
+| nombreProducto | Nombre del producto. | 100 | Alfanumérico | Texto libre |
+| descripcionProducto | Descripción del producto. | 200 | Alfanumérico | Texto libre |
+| precioCosto | Costo de adquisición vigente del producto. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| precioVenta | Precio de venta vigente del producto al público. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| stockActual | Cantidad disponible en inventario. | — | Numérico (entero) | Continuo: {vi: 0; vf: n} |
+| stockMinimo | Umbral mínimo que dispara la alerta de reposición. | — | Numérico (entero) | Continuo: {vi: 0; vf: n} |
+| fechaVencimiento | Fecha de vencimiento del producto, cuando corresponda. | — | Fecha | Continuo: {vi: fecha actual; vf: n} |
+| idTurno | Identificador único del turno. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| fechaTurno | Fecha en la que se desarrolla el turno. | — | Fecha | Continuo: {vi: 14/05/2026; vf: fecha actual} |
+| tipoTurno | Franja horaria del turno. | 10 | Alfanumérico | Discreto: {(M, mañana); (T, tarde)} |
+| montoInicialCaja | Monto de dinero en caja al iniciar el turno. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| totalEfectivo | Total vendido en efectivo durante el turno. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| totalTransferencia | Total vendido por transferencia durante el turno. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| totalTurno | Importe total vendido durante el turno (efectivo + transferencia). | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| idVenta | Identificador único de la venta. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| fechaVenta | Fecha y hora de la venta. | — | Fecha/Hora | Continuo: {vi: 14/05/2026; vf: fecha actual} |
+| medioPago | Medio de pago utilizado para abonar la venta. | 15 | Alfanumérico | Discreto: {(E, efectivo); (T, transferencia)} |
+| totalVenta | Importe total de la venta. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| idDetalle | Identificador único del detalle de venta. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| cantidad | Cantidad de unidades vendidas del producto. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| precioUnitario | Precio unitario del producto al momento de la venta. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| subtotal | Subtotal de la línea (cantidad x precioUnitario). | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| idPago | Identificador único del pago realizado a un proveedor. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| fechaPago | Fecha en la que se realizó el pago al proveedor. | — | Fecha | Continuo: {vi: 14/05/2026; vf: fecha actual} |
+| monto | Importe abonado al proveedor. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| concepto | Detalle o motivo del pago realizado al proveedor. | 150 | Alfanumérico | Texto libre |
+| estadoUsuario | Estado del usuario. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
+| estadoProveedor | Estado del proveedor. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
+| estadoProducto | Estado del producto. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
+| estadoVenta | Estado de la venta. | — | Alfanumérico | Dominio {(C, confirmada); (A, anulada)} |
