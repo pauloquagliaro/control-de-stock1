@@ -29,7 +29,7 @@
 
 **6) ¿Cuál es la problemática a la que se enfrenta el negocio actualmente?**
 
-*   **Rta:** Las problemáticas son que a la hora pico (11:00 hasta las 14:30 en el turno mañana y 20:30 hasta las 12:30 en el turno tarde), se acumulan demasiados clientes y en algunos casos no se puede anotar el importe de la venta lo que al final de la jornada te termina dando un faltante de caja, también aparecen sobrantes en diversos casos. Otro problema es que no hay un stock preciso lo que me genera pérdida de tiempo ya que necesito ir al depósito a ver qué mercadería necesito comprar.
+*   **Rta:** Las problemáticas son que a la hora pico (11:00 hasta las 14:30 en el turno mañana y 20:30 hasta las 00:30 en el turno tarde), se acumulan demasiados clientes y en algunos casos no se puede anotar el importe de la venta lo que al final de la jornada te termina dando un faltante de caja, también aparecen sobrantes en diversos casos. Otro problema es que no hay un stock preciso lo que me genera pérdida de tiempo ya que necesito ir al depósito a ver qué mercadería necesito comprar.
 
 **7) ¿Cuál crees que es la solución a todo esto?**
 
