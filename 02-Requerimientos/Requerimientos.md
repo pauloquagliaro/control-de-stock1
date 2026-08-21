@@ -50,7 +50,7 @@ El sistema deberá permitir diferenciar las funcionalidades disponibles para los
 
 ## 2. Requerimientos No Funcionales (RNF)
 RNF-01 —
-El sistema deberá ser tener una interfaz intuitiva y ser fácil de usar.
+El sistema deberá ser intuitivo y ser fácil de usar.
 
 ---
 
