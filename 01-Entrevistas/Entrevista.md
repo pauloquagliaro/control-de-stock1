@@ -29,7 +29,7 @@
 *   **Rta:** La solución que pienso es tener un sistema en el que pueda ver la cantidad de stock que tengo , ver el precio lista y costo de cada uno, poder ver cuál es el producto más vendido, poder imprimir la cantidad de stock y los balances de caja de cada turno. Por otro lado quiero que el sistema cuente con un código de barras a la hora de vender cada producto, ver la totalidad vendida en cada turno y la suma de ambas. También ver un balance de las ganancias y ver cuántas ventas se realizaron en “x” fechas.
 
 **8) ¿Respecto al balance de cajas que informacion esperas ver?**<br>
-*   **Rta:** En el balance de caja quiero que me aparezcan las ventas , el costo de la mercadería  y la ganancia bruta. Además, quiero poder ver el detalle de cada operación realizada en ese período.
+*   **Rta:** En el balance de caja quiero que me aparezca con cuanta plata empezo la caja, el total de ventas, el costo de la mercadería vendida y la ganancia bruta resultante. Además, quiero poder ver el detalle de cada operación realizada en ese período.
 
 **9) ¿Quiénes usarían el sistema y qué tareas debería poder hacer cada uno?**<br>
 *   **Rta:** Lo usarían los empleados y yo. Los empleados deberían poder registrar ventas y consultar el stock disponible. Las tareas más delicadas, como modificar el stock, dar de alta o baja productos, eliminar registros y consultar balances o ganancias, las haría solo yo (empleador). También quiero poder imprimir reportes.
