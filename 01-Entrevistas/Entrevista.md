@@ -48,7 +48,7 @@
 *   **Rta:** Dale, me parece bien
 
 **11) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
-*   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
+*   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor.En  caso de no contar con dinero suficiente en la caja se avisa al empleador y se paga mediante transferencia. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
 
 **12) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
 
