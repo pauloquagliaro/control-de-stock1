@@ -42,7 +42,7 @@
 **11) entendemos, en ese caso Para poder llevar correctamente el control del stock y del balance de caja, proponemos que estas ventas se registren mediante una factura, detallando los productos vendidos, cantidades y precios. La factura quedaría registrada como impaga hasta que el cliente realice el pago. De esta manera, los productos se descuentan del stock al momento de realizar la venta, pero el importe no se incorpora al balance de caja hasta que sea abonado. ¿Está de acuerdo con manejarlo de esta manera?**
 *   **Rta:** Dale, me parece bien
 
-**12¿Cuando el cliente compra una cierta cantidad $10000 se le permite hacer un pago combinado? ejemplo: 6000 en efectivo y 4000 en transferencia.** <br>
+**12)¿Cuando el cliente compra una cierta cantidad $10000 se le permite hacer un pago combinado? ejemplo: 6000 en efectivo y 4000 en transferencia.** <br>
 *   **Rta:** Si, si el cliente lo desea puede hacerlo.
 
 **13) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
