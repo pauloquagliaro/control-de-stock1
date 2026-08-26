@@ -58,10 +58,6 @@ En ambos casos a los productos se le aumenta esa diferencia.
 **17)Entendemos que cada producto que vendés proviene de un proveedor puntual. Para poder identificar rápido qué productos le corresponden a cada uno, por ejemplo a la hora de actualizar precios o registrar un pago, te proponemos registrar en el sistema a los proveedores y asociarles los productos que te venden. ¿Le parece bien manejarlo así?** <br> 
 *   **Rta:** Rta: Sí, me parece bien, así puedo ver de una todos los productos que me vende cada proveedor.
 
-
-**18) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
-*   **Rta:** Sí, estoy de acuerdo.
-
-**19) ¿Cómo se calcula el precio de venta de cada producto?**
+**18) ¿Cómo se calcula el precio de venta de cada producto?**
 *   **Rta:** El precio de venta depende de cada producto y del margen de ganancia que se desea obtener. El porcentaje no es igual para todos los productos, sino que puede variar según el caso.
 
