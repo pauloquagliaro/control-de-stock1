@@ -48,12 +48,11 @@
 *   **Rta:** Prefiero dejarlo en un cuadernillo por fuera del sistema.
 
 **11) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
+*   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
 
+**12) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
 
-
-**12) ¿Considera útil llevar dentro del sistema un registro de los proveedores y de los pagos realizados por la mercadería adquirida, para poder tenerlos en cuenta en los balances?**
-
-*   **Rta:** Sí, estaría bueno porque esa información me resulta útil para poder ver cuánto gastó en la mercadería adquirida.
+*   **Rta:** Sí, estoy de acuerdo.
 
 **13) ¿Cómo se calcula el precio de venta de cada producto?**
 
