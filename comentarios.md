@@ -1,5 +1,4 @@
 **métodos de pago:** tener en cuenta si se admitirán múltiples formas de pagos para una venta (parte en efectivo, parte en transferencia, por ejemplo, o de más de una billetera, o hacer un pago parcial),cheques.<br>
 **Considerar facturas impagas** si no se quiere manejar cuenta corriente por cliente (para contemplar fiados o pagos parciales).<br>
 Manejar las ventas con comprobante de ventas (a futuro ver facturación fiscal).<br>
-no /asistencias: el sistema emitirá un reporte de las ventas entre lapsos seleccionados de horarios(por defecto diario), y luego la persona encargada del turno firmara la hoja. (revisar cuaderno de ventas y firmas)<br>
 **Calculo de precio de venta de productos:** preguntar mejor sobre como realiza el empleador las actualizaciones de precios, preguntarle sobre un ejemplo real y analizar como lo quiere implementado en el sistema. Por ejemplo: cómo actualiza precios si un proveedor determinado le trae todos sus productos con un aumento del 5%. Cómo y en base a qué criterios realiza actualizaciones masivas de precios.
