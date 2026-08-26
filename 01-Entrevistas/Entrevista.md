@@ -37,25 +37,31 @@
 **10) ¿Venden fiado?**
 *   **Rta:** Se vende solo fiado a clientes del barrio y se anotan en un cuadernillo el importe y el nombre y apellido. Si un cliente viene a comprar pero tiene una deuda muy vieja o excedida, no se le fía en esos casos.
 **11) ¿El cliente puede pagar solo un porcentaje de lo que adeuda?  ejemplo: debe 20000 y solo tiene 15000 para pagar.** <br>
-*   **Rta:**Si, se puede cancelar solo un porcentaje de la deuda.
+*   **Rta:**Si, se puede cancelar solo un porcentaje de la deuda.<br>
 
-**11) entendemos, en ese caso Para poder llevar correctamente el control del stock y del balance de caja, proponemos que estas ventas se registren mediante una factura, detallando los productos vendidos, cantidades y precios. La factura quedaría registrada como impaga hasta que el cliente realice el pago. De esta manera, los productos se descuentan del stock al momento de realizar la venta, pero el importe no se incorpora al balance de caja hasta que sea abonado. ¿Está de acuerdo con manejarlo de esta manera?**
+**12) entendemos, en ese caso Para poder llevar correctamente el control del stock y del balance de caja, proponemos que estas ventas se registren mediante una factura, detallando los productos vendidos, cantidades y precios. La factura quedaría registrada como impaga hasta que el cliente realice el pago. De esta manera, los productos se descuentan del stock al momento de realizar la venta, pero el importe no se incorpora al balance de caja hasta que sea abonado. ¿Está de acuerdo con manejarlo de esta manera?**<br>
 *   **Rta:** Dale, me parece bien
 
-**12)¿Cuando el cliente compra una cierta cantidad $10000 se le permite hacer un pago combinado? ejemplo: 6000 en efectivo y 4000 en transferencia.** <br>
+**13)¿Cuando el cliente compra una cierta cantidad $10000 se le permite hacer un pago combinado? ejemplo: 6000 en efectivo y 4000 en transferencia.** <br>
 *   **Rta:** Si, si el cliente lo desea puede hacerlo.
 
-**13) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
+**14) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
 *   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor.En  caso de no contar con dinero suficiente en la caja se avisa al empleador y se paga mediante transferencia. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
 
-**14)¿Cómo se manejan a la hora de actualizar los precios?**  <br>
-*   **Rta:**  En algunos casos los proveedores nos avisan que por ejemplo la semana que viene las aguas saborizadas aumentaran un 5%. En otros como se compra cada semana el precio se conoce al reestockear.<br>
-En ambos casos a los productos se le aumenta esa diferencia
-
-
-**15) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
+**15) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**<br>
 *   **Rta:** Sí, estoy de acuerdo.
 
-**16) ¿Cómo se calcula el precio de venta de cada producto?**
+**16)¿Cómo se manejan a la hora de actualizar los precios?**  <br>
+*   **Rta:**  En algunos casos los proveedores nos avisan que por ejemplo la semana que viene las aguas saborizadas aumentaran un 5%. En otros como se compra cada semana el precio se conoce al reestockear.<br>
+En ambos casos a los productos se le aumenta esa diferencia.
+
+**17)Entendemos que cada producto que vendés proviene de un proveedor puntual. Para poder identificar rápido qué productos le corresponden a cada uno, por ejemplo a la hora de actualizar precios o registrar un pago, te proponemos registrar en el sistema a los proveedores y asociarles los productos que te venden. ¿Le parece bien manejarlo así?** <br> 
+*   **Rta:** Rta: Sí, me parece bien, así puedo ver de una todos los productos que me vende cada proveedor.
+
+
+**18) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
+*   **Rta:** Sí, estoy de acuerdo.
+
+**19) ¿Cómo se calcula el precio de venta de cada producto?**
 *   **Rta:** El precio de venta depende de cada producto y del margen de ganancia que se desea obtener. El porcentaje no es igual para todos los productos, sino que puede variar según el caso.
 
