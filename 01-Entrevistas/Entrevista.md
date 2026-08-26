@@ -47,9 +47,9 @@
 
 *   **Rta:** Prefiero dejarlo en un cuadernillo por fuera del sistema.
 
-**11) ¿Cómo se manejan con los pedidos a los proveedores?**
+**11) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
 
-*   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide y se realiza el pago una vez que el producto llega. En otros los proveedores mandan el listado de stock por Whatsapp.
+*   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
 
 **12) ¿Considera útil llevar dentro del sistema un registro de los proveedores y de los pagos realizados por la mercadería adquirida, para poder tenerlos en cuenta en los balances?**
 
