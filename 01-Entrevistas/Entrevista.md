@@ -43,7 +43,7 @@
 
 *   **Rta:** Se vende solo fiado a clientes del barrio y se anotan en un cuadernillo el importe y el nombre y apellido. Si un cliente viene a comprar pero tiene una deuda muy vieja o excedida, no se le fía en esos casos.
 
-**10) entendemos, en ese caso vamos a tener que implementarlo en el sistema asi nos da bien el stock y el balance de caja.**
+**10) entendemos, en ese caso Para poder llevar correctamente el control del stock y del balance de caja, proponemos que estas ventas se registren mediante una factura, detallando los productos vendidos, cantidades y precios. La factura quedaría registrada como impaga hasta que el cliente realice el pago. De esta manera, los productos se descuentan del stock al momento de realizar la venta, pero el importe no se incorpora al balance de caja hasta que sea abonado. ¿Está de acuerdo con manejarlo de esta manera?**
 
 *   **Rta:** Dale, me parece bien
 
