@@ -32,7 +32,7 @@
 *   **Rta:** En el balance de caja quiero que me aparezca con cuanta plata empezo la caja, el total de ventas, el costo de la mercadería vendida y la ganancia bruta resultante. Además, quiero poder ver el detalle de cada operación realizada en ese período.
 
 **9) ¿Quiénes usarían el sistema y qué tareas debería poder hacer cada uno?**<br>
-*   **Rta:** Lo usarían los empleados y yo. Los empleados deberían poder registrar ventas y consultar el stock disponible. Las tareas más delicadas, como modificar el stock, dar de alta o baja productos, eliminar registros y consultar balances o ganancias, las haría solo yo (empleador). También quiero poder imprimir reportes.
+*   **Rta:** Lo usarían los empleados y yo. Los empleados deberían poder registrar ventas y consultar el stock disponible. Las tareas más delicadas, como modificar el stock, dar de alta o baja productos y eliminar registros, las haría solo yo (empleador). También quiero poder imprimir reportes.
 
 **10) ¿Venden fiado?**
 *   **Rta:** Se vende solo fiado a clientes del barrio y se anotan en un cuadernillo el importe y el nombre y apellido. Si un cliente viene a comprar pero tiene una deuda muy vieja o excedida, no se le fía en esos casos.
