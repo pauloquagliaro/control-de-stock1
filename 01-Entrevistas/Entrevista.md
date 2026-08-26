@@ -48,9 +48,14 @@
 **13) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
 *   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor.En  caso de no contar con dinero suficiente en la caja se avisa al empleador y se paga mediante transferencia. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
 
-**14) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
+**14)¿Cómo se manejan a la hora de actualizar los precios?**  <br>
+*   **Rta:**  En algunos casos los proveedores nos avisan que por ejemplo la semana que viene las aguas saborizadas aumentaran un 5%. En otros como se compra cada semana el precio se conoce al reestockear.<br>
+En ambos casos a los productos se le aumenta esa diferencia
+
+
+**15) Teniendo en cuenta que estos pagos representan una salida de dinero de la caja, te proponemos registrar estos movimientos en el sistema para que puedan ser contemplados en los balances de caja. ¿Está de acuerdo con esta propuesta?**
 *   **Rta:** Sí, estoy de acuerdo.
 
-**15) ¿Cómo se calcula el precio de venta de cada producto?**
+**16) ¿Cómo se calcula el precio de venta de cada producto?**
 *   **Rta:** El precio de venta depende de cada producto y del margen de ganancia que se desea obtener. El porcentaje no es igual para todos los productos, sino que puede variar según el caso.
 
