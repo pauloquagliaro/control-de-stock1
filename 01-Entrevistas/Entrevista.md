@@ -65,7 +65,3 @@
 **15) Entendemos que ese es el sistema de cálculo actual para tener un aproximado de las ganancias pero cuando tengas el sistema y este te permita ver a detalle la ganancia de cada producto este 28% para calcular la ganancia quedaría obsoleto y pasarías a tenerla más detallada y precisa.**
 
 *   **Rta:** Claro, lo que yo hago es un aproximado; si tuviera el sistema sabría cuánto ganó con más precisión en cada producto.
-
-**16) Entonces nos dijiste que hay una planilla donde figura qué empleado trabajó en ese turno, ¿te gustaría que eso esté digitalizado dentro del sistema?**
-
-*   **Rta:** Sí, me gustaría que eso esté digitalizado, que en el balance del día aparezca quiénes trabajaron en cada turno.
