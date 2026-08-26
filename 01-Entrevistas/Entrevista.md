@@ -43,9 +43,9 @@
 
 *   **Rta:** Se vende solo fiado a clientes del barrio y se anotan en un cuadernillo el importe y el nombre y apellido. Si un cliente viene a comprar pero tiene una deuda muy vieja o excedida, no se le fía en esos casos.
 
-**10) entendemos, en ese caso vamos a tener que implementarlo en el sistema asi nos da bien el stock y el balance de caja, al registrar una venta vas a poder ponerla como fiado**
+**10) entendemos, en ese caso vamos a tener que implementarlo en el sistema asi nos da bien el stock y el balance de caja.**
 
-*   **Rta:** 
+*   **Rta:** Dale, me parece bien
 
 **11) ¿Cómo se manejan con los pedidos a los proveedores y los pagos?**
 *   **Rta:** En algunos casos los proveedores van hasta el negocio y ofrecen los productos que tienen en oferta, si hay algún producto que se necesite y sea buena la oferta se pide.Cuando llega mercadería al negocio, la persona que se encuentra atendiendo en ese momento puede retirar dinero de la caja para realizar el pago al proveedor. Este movimiento se registra actualmente en el cuaderno junto con las demás operaciones del negocio.
