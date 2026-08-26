@@ -31,7 +31,7 @@
 **8) ¿Respecto al balance de cajas que informacion esperas ver?**
 Rta: En el balance de caja quiero que me aparezcan las ventas , el costo de la mercadería  y la ganancia bruta. Además, quiero poder ver el detalle de cada operación realizada en ese período.
 
-**8) ¿Quiénes usarían el sistema y qué tareas debería poder hacer cada uno?**
+**8) ¿Quiénes usarían el sistema y qué tareas debería poder hacer cada uno?**<br>
    **Rta:** Lo usarían los empleados y yo. Los empleados deberían poder registrar ventas y consultar el stock disponible. Las tareas más delicadas, como modificar el stock, dar de alta o baja productos, eliminar registros y consultar balances o ganancias, las haría solo yo (empleador). También quiero poder imprimir reportes.
 
 **9) ¿Venden fiado?**
