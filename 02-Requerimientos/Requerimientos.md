@@ -43,6 +43,26 @@ El sistema permitira al empleador generar e imprimir reportes de la información
 RF-13 —
 El sistema diferenciara las funcionalidades disponibles para los empleados y el empleador según su rol.
 
+RF-14 —
+El sistema permitirá aplicar un aumento de precio masivo a todos los productos asociados a un proveedor determinado.
+
+RF-15 —
+El sistema permitirá registrar una venta fiada, indicando nombre, apellido e importe adeudado por el cliente.
+
+RF-16 —
+El sistema permitirá registrar pagos parciales sobre una deuda de fiado.
+
+RF-17 —
+Las ventas fiadas se generarán como una factura con el detalle de productos, cantidades y precios, quedando marcada como impaga hasta que el cliente abone.
+
+RF-18 —
+El stock se descontará al momento de la venta fiada, independientemente de si fue abonada o no.
+
+RF-19 —
+El importe de una venta fiada se incorporará al balance de caja recién cuando el cliente la abone.
+RF-20 —
+El sistema permitirá registrar un pago combinado (parte en efectivo, parte en transferencia) para una misma venta.
+
 ---
 
 ## 2. Requerimientos No Funcionales (RNF)
