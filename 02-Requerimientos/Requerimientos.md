@@ -92,6 +92,3 @@ El margen de ganancia utilizado para determinar el precio de venta podrá variar
 RD-02 —
 Una venta fiada queda registrada como factura impaga hasta que el cliente abona el importe adeudado.
 
-RD-01 —
-Un pago puede combinarse entre más de un medio de pago (efectivo y transferencia) dentro de una misma operación.
-
