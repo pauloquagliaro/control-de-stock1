@@ -4,13 +4,10 @@
 ### 01 — Turnos de atención
 El negocio se organiza en turno mañana y turno tarde.
 
-### 02 — Empleado por turno
-Cada turno debe quedar asociado al empleado o empleados que trabajaron durante el mismo.
+### 02 — Medio de pago
+Una venta puede ser abonada mediante efectivo o transferencia, o mediante una combinación de ambos dentro de una misma operación.
 
-### 03 — Medio de pago
-Una venta puede ser abonada mediante efectivo o transferencia.
-
-### 04 — Margen de ganancia
+### 03 — Margen de ganancia
 El margen de ganancia aplicado al precio de venta puede variar según el producto.
 ---
 
@@ -31,7 +28,7 @@ Al confirmar una transacción de salida o entrada, se dispara la actualización 
 
 ### 4. Cálculos<br>
 ### 01 — Ganancia por producto
-La ganancia obtenida por un producto se determinará a partir de la diferencia entre su precio de venta y su costo.
+La ganancia bruta obtenida por un producto se determinará a partir de la diferencia entre su precio de venta y su costo.
 
 ### 02 — Total de ventas por turno
 El total vendido de un turno se calculará a partir de las ventas registradas durante dicho turno.
