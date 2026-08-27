@@ -60,6 +60,7 @@ El stock se descontará al momento de la venta fiada, independientemente de si f
 
 RF-19 —
 El importe de una venta fiada se incorporará al balance de caja recién cuando el cliente la abone.
+
 RF-20 —
 El sistema permitirá registrar un pago combinado (parte en efectivo, parte en transferencia) para una misma venta.
 
