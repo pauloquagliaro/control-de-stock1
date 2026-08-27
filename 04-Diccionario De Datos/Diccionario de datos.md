@@ -19,24 +19,29 @@ Listado organizado con las definiciones precisas y rigurosas de los datos del si
 
 ## Almacenamientos
 
-Los almacenamientos son los flujos de datos en reposo del sistema. Cada uno se define como una estructura de datos:
+Usuario = @nombreUsuario + contraseña + nombreCompleto + rol + estadoUsuario
 
-    Usuario = @idUsuario + nombreUsuario + contraseña + nombreCompleto + rol + estadoUsuario
+Categoria = @nombreCategoria + (descripcionCategoria)
 
-    Categoria = @idCategoria + nombreCategoria + (descripcionCategoria)
+Proveedor = @cuit + razonSocial + (telefono) + (email) + (direccion) + estadoProveedor
 
-    Proveedor = @idProveedor + razonSocial + cuit + (telefono) + (email) + (direccion) + estadoProveedor
+Producto = @codigoBarras + nombreProducto + (descripcionProducto) + nombreCategoria + cuit + precioCosto + precioVenta + stockActual + stockMinimo + (fechaVencimiento) + estadoProducto
 
-    Producto = @idProducto + codigoBarras + nombreProducto + (descripcionProducto) + idCategoria + idProveedor + precioCosto + precioVenta + stockActual + stockMinimo + (fechaVencimiento) + estadoProducto
+Cliente = @nombreCliente + apellidoCliente + (telefono) + saldoDeuda
 
-    Turno = @idTurno + fechaTurno + tipoTurno + montoInicialCaja + 1{idUsuario}n + totalEfectivo + totalTransferencia + totalTurno
+Turno = @fechaTurno + tipoTurno + montoInicialCaja + 1{nombreUsuario}n + totalEfectivo + totalTransferencia + totalTurno
 
-    Venta = @idVenta + fechaVenta + idTurno + idUsuario + medioPago + 1{DetalleVenta}n + totalVenta + estadoVenta
+Venta = @numeroComprobante + fechaVenta + fechaTurno + tipoTurno + nombreUsuario + (nombreCliente + apellidoCliente) + 1{DetalleVenta}n + 1{DetallePago}n + totalVenta + estadoVenta
 
-    DetalleVenta = @idDetalle + idVenta + idProducto + cantidad + precioUnitario + subtotal
+DetalleVenta = @numeroComprobante + codigoBarras + cantidad + precioUnitario + costoUnitario + subtotal
 
-    PagoProveedor = @idPago + idProveedor + fechaPago + monto + (concepto)
+DetallePago = @numeroComprobante + medioPago + fechaPago + monto
 
+IngresoMercaderia = @numeroRemito + cuit + fechaIngreso + nombreUsuario + 1{DetalleIngreso}n + medioPago + montoTotal
+
+DetalleIngreso = @numeroRemito + codigoBarras + cantidad + costoUnitario
+
+PagoProveedor = @cuit + fechaPago + monto + (concepto)
 ---
 
 ## Estructuras con relación de selección
