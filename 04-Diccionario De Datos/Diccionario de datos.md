@@ -73,7 +73,10 @@ Mínimas unidades indivisibles de datos, con su nombre, descripción, longitud, 
 | razonSocial | Razón social del proveedor. | 100 | Alfanumérico | Texto libre |
 | telefono | Teléfono de contacto (proveedor o cliente). | 30 | Numérico | Texto libre |
 | email | Correo electrónico de contacto del proveedor. | 80 | Alfanumérico | Texto libre |
-| direccion | Domicilio del proveedor. | 120 | Alfanumérico | Texto libre |
+| calle | Nombre de la calle del domicilio. | 80 | Alfanumérico | Texto libre |
+| numero | Número o altura del domicilio. | 10 | Alfanumérico | Texto libre |
+| codigoPostal | Código postal del domicilio. | 8 | Alfanumérico | Texto libre |
+| localidad | Localidad del domicilio. | 50 | Alfanumérico | Texto libre |
 | codigoBarras | Código de barras del producto, utilizado como identificador del mismo. Identifica una combinación específica de marca y presentación. | 13 | Numérico | Continuo: {vi: 0; vf: n} |
 | nombreProducto | Nombre del producto. | 100 | Alfanumérico | Texto libre |
 | descripcionProducto | Descripción del producto. | 200 | Alfanumérico | Texto libre |
@@ -105,7 +108,7 @@ Mínimas unidades indivisibles de datos, con su nombre, descripción, longitud, 
 | montoTotal | Importe total abonado por un ingreso de mercadería. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | monto | Importe abonado a un proveedor o correspondiente a una línea de pago de una venta. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | concepto | Detalle o motivo del pago realizado al proveedor. | 150 | Alfanumérico | Texto libre |
-| estadoUsuario | Estado del usuario. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
-| estadoProveedor | Estado del proveedor. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
-| estadoProducto | Estado del producto. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
-| estadoVenta | Estado de la venta, determinado por la comparación entre la suma de sus pagos y el total. | — | Alfanumérico | Dominio {(I, impaga); (P, pagada parcial); (C, pagada); (A, anulada)} |
+| estadoUsuario | Indica si el usuario puede acceder al sistema (activo) o fue dado de baja, por ejemplo al dejar de trabajar en el negocio (inactivo). | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
+| estadoProveedor | Indica si al proveedor se le siguen realizando pedidos y pagos (activo) o se dejó de operar con él (inactivo). | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
+| estadoProducto | Indica si el producto se sigue comercializando y puede venderse (activo) o fue discontinuado del catálogo (inactivo), sin borrarse del historial de ventas pasadas. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
+| estadoVenta | Estado de la venta: impaga (sin pagos registrados), pagada parcial (con pagos registrados que no cubren el total), pagada (con pagos que cubren el total) o anulada. | — | Alfanumérico | Dominio {(I, impaga); (P, pagada parcial); (C, pagada); (A, anulada)} |
