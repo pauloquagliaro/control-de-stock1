@@ -9,6 +9,7 @@ Una venta puede ser abonada mediante efectivo o transferencia, o mediante una co
 
 ### 03 — Margen de ganancia
 El margen de ganancia aplicado al precio de venta puede variar según el producto.
+
 ---
 
 ### 2. Restricciones<br>
@@ -27,11 +28,11 @@ Al confirmar una transacción de salida o entrada, se dispara la actualización 
 ---
 
 ### 4. Cálculos<br>
-### 01 — Ganancia por producto
-La ganancia bruta obtenida por un producto se determinará a partir de la diferencia entre su precio de venta y su costo.
+### 01 — Ganancia bruta por producto
+La ganancia bruta obtenida por un producto se determinará a partir de la diferencia entre su precio de venta y su precio de costo.
 
 ### 02 — Total de ventas por turno
-El total vendido de un turno se calculará a partir de las ventas registradas durante dicho turno.
+El total vendido de un turno se calculará como la sumatoria de los importes totales (totalVenta) de todas las ventas registradas durante dicho turno.
 
 ### 03 — Total de ventas de un período
-El total facturado durante un período se calculará a partir de las ventas registradas dentro de dicho período.
+El total facturado durante un período se calculará como la sumatoria de los importes totales (totalVenta) de todas las ventas registradas dentro de dicho período.
