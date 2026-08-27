@@ -42,6 +42,7 @@ IngresoMercaderia = @numeroRemito + cuit + fechaIngreso + nombreUsuario + 1{Deta
 DetalleIngreso = @numeroRemito + codigoBarras + cantidad + costoUnitario
 
 PagoProveedor = @cuit + fechaPago + monto + (concepto)
+
 ---
 
 ## Estructuras con relación de selección
