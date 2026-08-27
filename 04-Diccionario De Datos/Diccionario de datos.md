@@ -62,49 +62,49 @@ Mínimas unidades indivisibles de datos, con su nombre, descripción, longitud, 
 
 | Nombre | Descripción | Longitud | Tipo | Dominio |
 | :--- | :--- | :---: | :--- | :--- |
-| idUsuario | Identificador único del usuario. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
 | nombreUsuario | Nombre de acceso al sistema (único). | 30 | Alfanumérico | Texto libre |
 | contraseña | Contraseña almacenada cifrada (hash). | 255 | Alfanumérico | Texto libre |
 | nombreCompleto | Nombre y apellido del usuario. | 80 | Alfanumérico | Texto libre |
 | rol | Rol del usuario dentro del sistema, determina las funcionalidades habilitadas. | 15 | Alfanumérico | Discreto: {(D, Empleador); (E, Empleado)} |
-| idCategoria | Identificador único de la categoría. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
 | nombreCategoria | Nombre del rubro/categoría del producto (ej.: comestibles, limpieza). | 50 | Alfanumérico | Texto libre |
 | descripcionCategoria | Descripción de la categoría. | 150 | Alfanumérico | Texto libre |
-| idProveedor | Identificador único del proveedor. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| cuit | CUIT del proveedor, utilizado como identificador del mismo. | 13 | Numérico | Formato XX-XXXXXXXX-X |
 | razonSocial | Razón social del proveedor. | 100 | Alfanumérico | Texto libre |
-| cuit | CUIT del proveedor. | 13 | Numérico | Formato XX-XXXXXXXX-X |
-| telefono | Teléfono de contacto del proveedor. | 30 | Numérico | Texto libre |
+| telefono | Teléfono de contacto (proveedor o cliente). | 30 | Numérico | Texto libre |
 | email | Correo electrónico de contacto del proveedor. | 80 | Alfanumérico | Texto libre |
 | direccion | Domicilio del proveedor. | 120 | Alfanumérico | Texto libre |
-| idProducto | Identificador único del producto. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
-| codigoBarras | Código de barras del producto, utilizado para identificarlo al momento de la venta. Es único, no admite repetición. | 13 | Numérico | Continuo: {vi: 0; vf: n} |
+| codigoBarras | Código de barras del producto, utilizado como identificador del mismo. Identifica una combinación específica de marca y presentación. | 13 | Numérico | Continuo: {vi: 0; vf: n} |
 | nombreProducto | Nombre del producto. | 100 | Alfanumérico | Texto libre |
 | descripcionProducto | Descripción del producto. | 200 | Alfanumérico | Texto libre |
 | precioCosto | Costo de adquisición vigente del producto. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | precioVenta | Precio de venta vigente del producto al público. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | stockActual | Cantidad disponible en inventario. | — | Numérico (entero) | Continuo: {vi: 0; vf: n} |
 | stockMinimo | Umbral mínimo que dispara la alerta de reposición. | — | Numérico (entero) | Continuo: {vi: 0; vf: n} |
-| fechaVencimiento | Fecha de vencimiento del producto, cuando corresponda. | — | Fecha | Continuo: {vi: fecha actual; vf: n} |
-| idTurno | Identificador único del turno. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
-| fechaTurno | Fecha en la que se desarrolla el turno. | — | Fecha | Continuo: {vi: 14/05/2026; vf: fecha actual} |
+| fechaVencimiento | Fecha de vencimiento del producto, cuando corresponda. | — | Fecha | Fecha válida, posterior a la fecha de ingreso del producto |
+| nombreCliente | Nombre del cliente con cuenta de fiado. | 50 | Alfanumérico | Texto libre |
+| apellidoCliente | Apellido del cliente con cuenta de fiado. | 50 | Alfanumérico | Texto libre |
+| saldoDeuda | Saldo actual adeudado por el cliente. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| fechaTurno | Fecha en la que se desarrolla el turno. | — | Fecha | Fecha válida, no posterior a la fecha actual |
 | tipoTurno | Franja horaria del turno. | 10 | Alfanumérico | Discreto: {(M, mañana); (T, tarde)} |
 | montoInicialCaja | Monto de dinero en caja al iniciar el turno. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | totalEfectivo | Total vendido en efectivo durante el turno. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | totalTransferencia | Total vendido por transferencia durante el turno. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | totalTurno | Importe total vendido durante el turno (efectivo + transferencia). | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
-| idVenta | Identificador único de la venta. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
-| fechaVenta | Fecha y hora de la venta. | — | Fecha/Hora | Continuo: {vi: 14/05/2026; vf: fecha actual} |
-| medioPago | Medio de pago utilizado para abonar la venta. | 15 | Alfanumérico | Discreto: {(E, efectivo); (T, transferencia)} |
+| numeroComprobante | Número de comprobante/ticket asociado a una venta. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| fechaVenta | Fecha y hora de la venta. | — | Fecha/Hora | Fecha y hora válida, no posterior al momento actual |
 | totalVenta | Importe total de la venta. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
-| idDetalle | Identificador único del detalle de venta. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
-| cantidad | Cantidad de unidades vendidas del producto. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
-| precioUnitario | Precio unitario del producto al momento de la venta. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| cantidad | Cantidad de unidades vendidas o ingresadas del producto. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| precioUnitario | Precio unitario de venta del producto al momento de la operación. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| costoUnitario | Costo unitario del producto al momento de la operación (venta o ingreso). | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | subtotal | Subtotal de la línea (cantidad x precioUnitario). | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
-| idPago | Identificador único del pago realizado a un proveedor. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
-| fechaPago | Fecha en la que se realizó el pago al proveedor. | — | Fecha | Continuo: {vi: 14/05/2026; vf: fecha actual} |
-| monto | Importe abonado al proveedor. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| medioPago | Medio de pago utilizado para abonar una venta o un ingreso de mercadería. | 15 | Alfanumérico | Discreto: {(E, efectivo); (T, transferencia)} |
+| fechaPago | Fecha en la que se realizó un pago (a un proveedor o de una venta). | — | Fecha | Fecha válida, no posterior a la fecha actual |
+| numeroRemito | Número de remito entregado por el proveedor junto con la mercadería. | — | Numérico (entero) | Continuo: {vi: 1; vf: n} |
+| fechaIngreso | Fecha en la que se recibió la mercadería. | — | Fecha | Fecha válida, no posterior a la fecha actual |
+| montoTotal | Importe total abonado por un ingreso de mercadería. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
+| monto | Importe abonado a un proveedor o correspondiente a una línea de pago de una venta. | 12,2 | Numérico (decimal) | Continuo: {vi: 0; vf: n} |
 | concepto | Detalle o motivo del pago realizado al proveedor. | 150 | Alfanumérico | Texto libre |
 | estadoUsuario | Estado del usuario. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
 | estadoProveedor | Estado del proveedor. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
 | estadoProducto | Estado del producto. | — | Booleano | Dominio {(1, activo); (0, inactivo)} |
-| estadoVenta | Estado de la venta. | — | Alfanumérico | Dominio {(C, confirmada); (A, anulada)} |
+| estadoVenta | Estado de la venta, determinado por la comparación entre la suma de sus pagos y el total. | — | Alfanumérico | Dominio {(I, impaga); (P, pagada parcial); (C, pagada); (A, anulada)} |
