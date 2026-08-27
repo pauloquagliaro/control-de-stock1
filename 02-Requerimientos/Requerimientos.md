@@ -68,12 +68,16 @@ El sistema permitirá registrar un pago combinado (parte en efectivo, parte en t
 ## 2. Requerimientos No Funcionales (RNF)
 RNF-01 —
 El sistema sera intuitivo y fácil de usar.
+
 RNF-02 —
 El sistema debe minimizar los errores de carga que generan faltantes o sobrantes de caja al finalizar el turno.
+
 RNF-03 —
 El sistema debe responder con rapidez al registrar una venta.
+
 RNF-04 —
 El sistema debe ser compatible con un lector de código de barras.
+
 RNF-05 —
 	El sistema debe garantizar la persistencia de la información (stock, ventas, balances, fiados) para que no se pierdan datos entre turnos.
 
@@ -83,8 +87,10 @@ RNF-05 —
 
 RD-01 —
 El margen de ganancia utilizado para determinar el precio de venta podrá variar según el producto.
+
 RD-02 —
 Una venta fiada queda registrada como factura impaga hasta que el cliente abona el importe adeudado.
+
 RD-01 —
 Un pago puede combinarse entre más de un medio de pago (efectivo y transferencia) dentro de una misma operación.
 
