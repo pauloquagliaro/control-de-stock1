@@ -8,7 +8,7 @@ RF-01 —
 El sistema permitira al empleador dar de alta, modificar y dar de baja productos.
 
 RF-02 —
-El sistema registrara y consultara el código de barras, precio de venta, y costo de cada producto.
+El sistema registrará y consultará el código de barras y el precio de venta de cada producto, disponibles para empleados y empleador. El costo de cada producto solo será visible para el empleador.
 
 RF-03 —
 El sistema consultara la cantidad disponible de cada producto.

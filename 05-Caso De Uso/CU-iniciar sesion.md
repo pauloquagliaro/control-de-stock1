@@ -3,25 +3,25 @@
 **Actores:** Empleado o Empleador (primario).
 
 **Precondiciones:**
-- El usuario debe tener un nombre de usuario y contraseña registrados en el sistema.
-- El usuario debe estar en estado activo (no dado de baja).
+El usuario debe tener un nombre de usuario y contraseña registrados en el sistema.<br>
+El usuario debe estar en estado activo (no dado de baja).<br>
 
 **Postcondiciones:**
-- El usuario queda autenticado en el sistema, con acceso a las funcionalidades habilitadas según su rol (Empleado o Empleador).
+El usuario queda autenticado en el sistema, con acceso a las funcionalidades habilitadas según su rol (Empleado o Empleador).
 
 **Camino básico:**
-1. El usuario ingresa su nombre de usuario y contraseña.
-2. El sistema valida las credenciales ingresadas.
-3. El sistema identifica el rol del usuario y habilita las funcionalidades correspondientes.
-4. El sistema muestra la pantalla principal.
+1. El usuario ingresa su nombre de usuario y contraseña.<br>
+2. El sistema valida las credenciales ingresadas.<br>
+3. El sistema identifica el rol del usuario y habilita las funcionalidades correspondientes.<br>
+4. El sistema muestra la pantalla principal.<br>
 
 **Caminos alternativos:**
 
-2.a El nombre de usuario no existe o la contraseña es incorrecta.
-2.a.1 El sistema muestra el mensaje "usuario o contraseña incorrectos". Vuelve al paso 1.
+2.a El nombre de usuario no existe o la contraseña es incorrecta.<br>
+2.a.1 El sistema muestra el mensaje "usuario o contraseña incorrectos". Vuelve al paso 1.<br>
 
-2.b El usuario existe pero está dado de baja (inactivo).
-2.b.1 El sistema muestra el mensaje "usuario inactivo, contacte al empleador". No permite continuar.
+2.b El usuario existe pero está dado de baja (inactivo).<br>
+2.b.1 El sistema muestra el mensaje "usuario inactivo, contacte al empleador". No permite continuar.<br>
 
 **Escenario de éxito:** el usuario accede al sistema con las funcionalidades habilitadas según su rol.
 
