@@ -10,10 +10,10 @@ El usuario debe estar en estado activo (no dado de baja).<br>
 El usuario queda autenticado en el sistema, con acceso a las funcionalidades habilitadas según su rol (Empleado o Empleador).
 
 **Camino básico:**
-1. El usuario ingresa su nombre de usuario y contraseña.<br>
-2. El sistema valida las credenciales ingresadas.<br>
-3. El sistema identifica el rol del usuario y habilita las funcionalidades correspondientes.<br>
-4. El sistema muestra la pantalla principal.<br>
+1.El usuario ingresa su nombre de usuario y contraseña.<br>
+2.El sistema valida las credenciales ingresadas.<br>
+3.El sistema identifica el rol del usuario y habilita las funcionalidades correspondientes.<br>
+4.El sistema ingresa a la pantalla principal.<br>
 
 **Caminos alternativos:**
 

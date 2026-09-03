@@ -8,11 +8,11 @@
 
 **Camino básico** (alta de proveedor):
 
-El empleador inicia el alta de un nuevo proveedor.<br>
-El sistema solicita CUIT y razón social, y opcionalmente teléfono, email y dirección.<br>
-El empleador completa los datos y confirma.<br>
-El sistema valida que el CUIT no esté registrado previamente.<br>
-El sistema da de alta el proveedor.<br>
+1.El empleador inicia el alta de un nuevo proveedor.<br>
+2.El sistema solicita CUIT y razón social, y opcionalmente teléfono, email y dirección.<br>
+3.El empleador completa los datos y confirma.<br>
+4.El sistema valida que el CUIT no esté registrado previamente.<br>
+5.El sistema da de alta el proveedor.<br>
 
 **Caminos alternativos:**
 

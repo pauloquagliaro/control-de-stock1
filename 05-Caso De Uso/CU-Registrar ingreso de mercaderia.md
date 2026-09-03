@@ -8,11 +8,11 @@
 
 **Camino básico:**
 
-El usuario inicia el registro de un ingreso de mercadería, indicando el proveedor y el número de remito.<br>
-El usuario carga cada producto recibido con su cantidad y costo unitario.<br>
-El sistema actualiza el stock de cada producto y su precio de costo vigente.<br>
-El usuario indica si el pago se realiza en el momento (efectivo o transferencia) o si queda pendiente.<br>
-Si el pago es en el momento, el sistema registra la salida de dinero de caja correspondiente.<br>
+1.El usuario inicia el registro de un ingreso de mercadería, indicando el proveedor y el número de remito.<br>
+2.El usuario carga cada producto recibido con su cantidad y costo unitario.<br>
+3.El sistema actualiza el stock de cada producto y su precio de costo vigente.<br>
+4.El usuario indica si el pago se realiza en el momento (efectivo o transferencia) o si queda pendiente.<br>
+5.Si el pago es en el momento, el sistema registra la salida de dinero de caja correspondiente.<br>
 
 **Caminos alternativos:**
 

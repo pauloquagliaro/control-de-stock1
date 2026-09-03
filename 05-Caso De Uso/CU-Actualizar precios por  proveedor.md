@@ -8,12 +8,12 @@
 
 **Camino básico:**
 
-El empleador selecciona un proveedor.<br>
-El sistema muestra los productos asociados a ese proveedor con su precio de venta vigente.<br>
-El empleador ingresa el porcentaje de aumento a aplicar.<br>
-El sistema calcula el nuevo precio de venta de cada producto y solicita confirmación.<br>
-El empleador confirma.<br>
-El sistema actualiza el precio de venta de todos los productos del proveedor.<br>
+1.El empleador selecciona un proveedor.<br>
+2.El sistema muestra los productos asociados a ese proveedor con su precio de venta vigente.<br>
+3.El empleador ingresa el porcentaje de aumento a aplicar.<br>
+4.El sistema calcula el nuevo precio de venta de cada producto y solicita confirmación.<br>
+5.El empleador confirma.<br>
+6.El sistema actualiza el precio de venta de todos los productos del proveedor.<br>
 
 **Caminos alternativos:**
 

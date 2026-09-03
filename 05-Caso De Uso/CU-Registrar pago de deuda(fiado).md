@@ -8,11 +8,11 @@
 
 **Camino básico:**
 
-El usuario busca al cliente y selecciona la factura de fiado a saldar.<br>
-El sistema muestra el saldo pendiente de la factura.<br>
-El usuario ingresa el monto a abonar y el medio de pago (o una combinación de medios).<br>
-El sistema valida que el monto no supere el saldo pendiente.<br>
-El sistema registra el pago, actualiza el saldo de la factura e incorpora el importe abonado al balance de caja del turno.<br>
+1.El usuario busca al cliente y selecciona la factura de fiado a saldar.<br>
+2.El sistema muestra el saldo pendiente de la factura.<br>
+3.El usuario ingresa el monto a abonar y el medio de pago (o una combinación de medios).<br>
+4.El sistema valida que el monto no supere el saldo pendiente.<br>
+5.El sistema registra el pago, actualiza el saldo de la factura e incorpora el importe abonado al balance de caja del turno.<br>
 
 **Caminos alternativos:**
 

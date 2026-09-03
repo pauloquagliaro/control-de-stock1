@@ -8,9 +8,9 @@
 
 **Camino básico:**
 
-El usuario ingresa a la consulta de productos, opcionalmente buscando por nombre o código de barras.<br>
-El sistema muestra el listado de productos con código de barras, nombre, precio de venta y cantidad disponible en stock.<br>
-Si el usuario tiene rol Empleador, el sistema muestra además el precio de costo de cada producto.<br>
+1.El usuario ingresa a la consulta de productos, opcionalmente buscando por nombre o código de barras.<br>
+2.El sistema muestra el listado de productos con código de barras, nombre, precio de venta y cantidad disponible en stock.<br>
+3.Si el usuario tiene rol Empleador, el sistema muestra además el precio de costo de cada producto.<br>
 
 **Caminos alternativos:**
 

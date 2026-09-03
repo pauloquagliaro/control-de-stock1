@@ -8,10 +8,10 @@
 
 **Camino básico:**
 
-El empleador selecciona el tipo de reporte a consultar (productos más vendidos, ventas por fecha, o total vendido por turno).<br>
-El empleador indica el filtro correspondiente (rango de fechas o turno).<br>
-El sistema calcula y muestra el resultado solicitado.<br>
-El empleador puede solicitar la impresión del reporte mostrado.<br>
+1.El empleador selecciona el tipo de reporte a consultar (productos más vendidos, ventas por fecha, o total vendido por turno).<br>
+2.El empleador indica el filtro correspondiente (rango de fechas o turno).<br>
+3.El sistema calcula y muestra el resultado solicitado.<br>
+4.El empleador puede solicitar la impresión del reporte mostrado.<br>
 
 **Caminos alternativos:**
 

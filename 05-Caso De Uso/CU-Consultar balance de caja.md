@@ -8,8 +8,8 @@
 
 **Camino básico:**
 
-El usuario indica el turno, día, mes o lapso de tiempo a consultar.<br>
-El sistema muestra el monto inicial de caja, el total de ventas y el detalle de cada operación realizada en el período.<br>
+1.El usuario indica el turno, día, mes o lapso de tiempo a consultar.<br>
+2.El sistema muestra el monto inicial de caja, el total de ventas y el detalle de cada operación realizada en el período.<br>
 
 **Caminos alternativos:**
 

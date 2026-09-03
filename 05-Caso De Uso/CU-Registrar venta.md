@@ -16,13 +16,13 @@ Si la venta fue abonada (total o parcialmente) al momento, el importe correspond
 
 **Camino básico** (venta de contado, un solo medio de pago):
 
-El usuario inicia el registro de una nueva venta.<br>
-El usuario escanea el código de barras de un producto.<br>
-El sistema busca el producto, valida que haya stock disponible y agrega la línea a la venta con su precio unitario vigente.<br>
-El usuario repite los pasos 2 y 3 hasta terminar de cargar los productos.<br>
-El sistema calcula el total de la venta.<br>
-El usuario selecciona el medio de pago (efectivo o transferencia) e ingresa el monto.<br>
-El sistema valida que el monto cubra el total, descuenta el stock de cada producto vendido, genera el comprobante y actualiza los totales del turno.<br>
+1.El usuario inicia el registro de una nueva venta.<br>
+2.El usuario escanea el código de barras de un producto.<br>
+3.El sistema busca el producto, valida que haya stock disponible y agrega la línea a la venta con su precio unitario vigente.<br>
+4.El usuario repite los pasos 2 y 3 hasta terminar de cargar los productos.<br>
+5.El sistema calcula el total de la venta.<br>
+6.El usuario selecciona el medio de pago (efectivo o transferencia) e ingresa el monto.<br>
+7.El sistema valida que el monto cubra el total, descuenta el stock de cada producto vendido, genera el comprobante y actualiza los totales del turno.<br>
 
 **Caminos alternativos:**
 
